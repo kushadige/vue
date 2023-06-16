@@ -1,0 +1,32 @@
+# Output
+<template>
+    <div class="user">
+        <h1>{{ user.name }}</h1>
+    </div>
+</template>
+
+
+# Functionality
+<script>
+    export default {
+        name: "User",
+        data() {
+            return {
+                user: { name: "Oguzhan" }
+            }
+        }
+    }
+</script>
+
+name -> Component Name
+data -> State for your component
+
+# Style
+<style>
+    h1 {
+        font-size: 2rem;
+    }
+</style>
+
+
+HTML, JavaScript and CSS this is all encapsulated in the component.

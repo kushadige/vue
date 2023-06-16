@@ -1,0 +1,6 @@
+vue-cli
+    npm install -g @vue/cli
+    vue --version
+    vue create your_project_name
+    npm run serve
+vuejs devtools for chrome

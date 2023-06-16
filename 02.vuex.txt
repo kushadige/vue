@@ -1,0 +1,5 @@
+Each component can hold its own data and state
+
+But there may be times when you're building a fairly large application
+and you need to share state across many components so "vuex" is used
+for state management
