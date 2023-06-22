@@ -3,3 +3,32 @@ Each component can hold its own data and state
 But there may be times when you're building a fairly large application
 and you need to share state across many components so "vuex" is used
 for state management
+
+> Vuex
+
+  - State Management & Pattern Library
+  - Used most commonly with the Vue framework
+  - Very similar to Redux, Flux, etc
+  - Centralized store for all components
+
+> Why use vuex?
+
+  - Components need to share state in many cases
+  - Vuex provides a single source of truth for data/state
+  - No need to pass events up and props down through multiple components
+  - Global state is "reactive"
+
+> How it works?
+  
+  Vue Components -> (Dispatch) -> Actions   // <<-->> Backend API
+  Actions        ->  (Commit)  -> Mutations // <<-->> Devtools
+  Mutations      ->  (Mutate)  -> State
+  State          ->  (Render)  -> Vue Components
+
+> Vuex terms
+
+  - State     => App-level state/data (todos, posts, token, etc)
+  - Getters   => Get pieces of state or computed values from state
+  - Actions   => Called from components to commit a mutation
+  - Mutations => Mutate the state (Update data, etc)
+  - Modules   => Each module can have its own state, getters, actions & mutations (posts module, auth module, etc)
